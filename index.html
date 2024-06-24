@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="Calculator">
+        <input type="text" id="no"><br>
+        <input class="b1" type="button" onclick="getElementById('no').value=''" value="AC">
+        <input class="b1" type="button" onclick="getElementById('no').value+='/'" value="/">
+        <input class="b1" type="button" onclick="getElementById('no').value+='%'" value="%">  
+        <input class="b2" type="button" onclick="getElementById('no').value+='+'" value="+"><br>
+        <input class="b3" type="button" onclick="getElementById('no').value+=7" value="7">
+        <input class="b3"type="button" onclick="getElementById('no').value+=8" value="8">
+        <input class="b3"type="button" onclick="getElementById('no').value+=9" value="9">
+        <input class="b2" type="button" onclick="getElementById('no').value+='*'" value="*"><br>
+        <input class="b3" type="button" onclick="getElementById('no').value+=4" value="4">
+        <input class="b3"type="button" onclick="getElementById('no').value+=5" value="5">
+        <input class="b3"type="button" onclick="getElementById('no').value+=6" value="6">
+        <input class="b2" type="button" onclick="getElementById('no').value+='-'" value="-"><br>
+        <input class="b3"type="button" onclick="getElementById('no').value+=1" value="1">
+        <input class="b3"type="button" onclick="getElementById('no').value+=2" value="2">
+        <input class="b3" type="button" onclick="getElementById('no').value+=3" value="3">
+        <input class="b2"type="button" onclick="getElementById('no').value+='.'" value="."><br>
+        <input class="b3" type="button" onclick="getElementById('no').value+=0" value="0">
+        <input class="b2"type="button" value="=" onclick="getElementById('no').value=eval(document.getElementById('no').value)">
+    </div>
+</body>
+</html>
